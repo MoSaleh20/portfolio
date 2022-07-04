@@ -84,7 +84,7 @@ ul{
     grid-template-areas: 
     'nav nav'
     'profile headline';
-    min-width: 400px;
+
     margin: 0 auto;
     grid-template-rows: 45px 1fr;
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -448,7 +448,7 @@ height: 30px;
         'more'
         'skills'
         'sites';
-        width: 100%;
+        width: 95%;
         margin:auto;
     }
     .about .about-class{
@@ -458,5 +458,8 @@ height: 30px;
     }
     .sites-list{
         flex-wrap: wrap;
+    }
+    .contact{
+        width: 95%;
     }
 }
