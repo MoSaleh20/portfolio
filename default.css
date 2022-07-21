@@ -21,6 +21,7 @@
 
 body{
     overflow-x:hidden;
+    min-width: 350px;
 }
 body *{
     transition: 0.3s;
@@ -357,10 +358,12 @@ ul{
     list-style: none;
     margin: auto;
     min-width: 200px;
+    flex-wrap: wrap;
 }
 
 .site-logo{
     border-radius: 50%;
+    margin: 10px;
 }
 
 .pic{
@@ -382,7 +385,30 @@ ul{
 .more p{
     margin-bottom: 20px;
 }
- 
+/* Recent projects */
+
+.boxes{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-box{
+    background-color:var(--secondaryColor);
+    border-radius: 20px;
+    text-align: left;
+    margin: 20px;
+    max-width: 300px;
+    border: 1px solid var(--borderColor);
+    margin-top: 30px;
+}
+
+.project-box p{
+    margin: 20px;
+}
+
+
 /* contact */
 
 .contact{
@@ -392,7 +418,6 @@ ul{
 }
 
 .contact-box{
-    border: #17a2b8;
     background-color:var(--secondaryColor);
     border-radius: 20px;
     text-align: left;
@@ -458,8 +483,5 @@ height: 30px;
     }
     .sites-list{
         flex-wrap: wrap;
-    }
-    .contact{
-        width: 95%;
     }
 }
